@@ -11,7 +11,7 @@ def index():
 @app.route("/more", methods=["POST"])
 def more():
     name = request.form.get("name")
-    if name == "raju":
+    if name == "raju" or name == "Raju" or name == "RAJU" or name == "Robiul Hossain Raju" or name == "robiul hossain raju":
         return "You are a good boy Raju!"
     else:
         return render_template("more.html", name=name)
